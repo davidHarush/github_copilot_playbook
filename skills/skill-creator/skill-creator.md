@@ -1,10 +1,9 @@
 ---
-
 name: skill-creator
 description: Create high-quality GitHub Copilot agent skills for software projects. Generates structured SKILL.md files with clear scope, inputs, outputs, constraints, and reusable workflows. Use when creating new skills or improving existing ones.
 argument-hint: "[skill-name] [purpose]"
 user-invocable: true
---------------------
+---
 
 # Skill Creator
 
@@ -73,6 +72,52 @@ When useful, also produce:
 ---
 
 ## Core design principles
+
+### 7. Use supporting assets when valuable
+
+Skills are not limited to `SKILL.md`.
+
+A strong skill may include:
+
+* `scripts/` for deterministic logic (bash, python, etc.)
+* `templates/` for structured outputs (markdown, json, etc.)
+* `examples/` for real input/output references
+
+Only include additional files when they improve reliability, reduce ambiguity, or prevent repeated mistakes.
+
+Always reference these assets explicitly inside the SKILL.md so they can be used when relevant.
+
+---
+
+## Suggested folder structure
+
+When appropriate, generate skills using this structure:
+
+```
+.github/skills/<skill-name>/
+├── SKILL.md
+├── scripts/
+│   └── <script files>
+├── templates/
+│   └── <template files>
+└── examples/
+    └── <example files>
+```
+
+Example:
+
+```
+.github/skills/release-notes/
+├── SKILL.md
+├── scripts/
+│   └── generate_release_notes.sh
+├── templates/
+│   └── release_notes.md
+└── examples/
+    └── sample_output.md
+```
+
+---
 
 ### 1. One job per skill
 
