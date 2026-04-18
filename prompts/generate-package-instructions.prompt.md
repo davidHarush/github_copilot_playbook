@@ -1,5 +1,5 @@
 ---
-description: Generate strict Copilot instructions for a specific Android/Kotlin package in a legacy codebase
+description: Generate strict Copilot instructions for a specific Android/Kotlin package
 ---
 
 You are generating a Copilot instructions file for a specific package inside a large, messy, legacy Android codebase.
