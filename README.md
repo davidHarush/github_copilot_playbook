@@ -4,14 +4,8 @@ This repository contains custom GitHub Copilot assets for defining and testing r
 
 ## 📦 Contents
 
-### 🔹 `skill-author`
-- deprecated
-- A reusable Skill that defines how to create and maintain other `SKILL.md` files.
----
-
 ### 🔹 `skill-creator`
 
-- This is improved ver of skill-author
 - Create high-quality GitHub Copilot agent skills for software projects. Generates structured SKILL.md files with clear scope, inputs, outputs, constraints, and reusable workflows. Use when creating new skills or improving existing ones.
 
 ---
@@ -26,5 +20,4 @@ This repository contains custom GitHub Copilot assets for defining and testing r
 - A prompt file designed to Generate strict Copilot instructions for a specific Android/Kotlin package
 
 ---
-
 
